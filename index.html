@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>MultiView HLS Player</title>
+</head>
+<body>
+  <header>
+    <img src="logo.png" alt="MultiView Logo" class="logo"> <!-- Add a logo here -->
+    <h1>MultiView HLS Player</h1>
+  </header>
+
+  <main>
+    <form id="streamForm">
+      <input type="text" id="streamUrl" placeholder="Enter m3u8 URL">
+      <button type="submit">Add Stream</button>
+    </form>
+    <button id="toggleFullScreen">MultiView Full Screen</button>
+    <div id="playerContainer">
+      <!-- Video players will be added dynamically here -->
+    </div>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+  <script src="script.js"></script>
+</body>
+</html>
+
